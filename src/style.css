@@ -1,0 +1,49 @@
+.text-editor {
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: black;
+  text-align: left;
+  padding: 20px;
+  min-height: 100%;
+}
+
+.viewport {
+  height: 400px;
+  width: 600px;
+  overflow: auto;
+}
+
+.content-container,
+.editor-wrapper {
+  height: 100%;
+  line-height: 24px;
+}
+
+.editor-wrapper:focus {
+  outline: none;
+}
+
+.with-line-number {
+  padding-left: 60px;
+  position: relative;
+  min-height: calc(100% - 40px);
+}
+
+.ruler {
+  background: #eaecec;
+  position: absolute;
+  left: 0;
+  text-align: right;
+  height: 100%;
+  width: 30px;
+  top: 0;
+  padding: 0px 10px 0px;
+  user-select: none;
+  color: #a9a8a8;
+  border-right: 1px solid #d2d2d2;
+  line-height: 24px;
+}
+
+.line-number:first-child {
+  padding-top: 20px;
+}
